@@ -31,5 +31,8 @@ public class LineComp {
         System.out.println("Length of line1 is : " + length1);
         double length2 = obj1.length1(12,12,14,14);
         System.out.println("Length of line2 is : " + length2);
+        if (length1 == length2) {
+            System.out.println("length of line1 is equal to length of line2");
+        }
     }
 }
