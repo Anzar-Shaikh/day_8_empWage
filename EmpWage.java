@@ -1,10 +1,8 @@
 package com.bl.opps;
 
-import java.util.Random;
-
-
 public class EmpWage {
     public static void main(String[] args) {
-        System.out.println("Welcome to employee wage computation problem !!!");
+        System.out.println("Welcome to employee wage computation problem.");
+
     }
 }
