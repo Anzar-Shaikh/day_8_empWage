@@ -10,16 +10,18 @@ class utilityEmpWage{
     public int fullDayHr = 8;
     int check = rand.nextInt(2)+1;
 
-    public void present() {
+    public boolean present() {
         if (check == isAbsent) {
             System.out.println("Employee is absent.");
+            return false;
         }
         else {
             System.out.println("Employee is present.");
+            return true;
         }
     }
     public void dailyWage(){
-        if (check == isPresent) {
+        if (present()) {
             int dailyWage = wagePerHr*fullDayHr;
             System.out.println("Wage of the day of employee is : " + dailyWage);
         }
@@ -30,7 +32,7 @@ public class EmpWage {
     public static void main(String[] args) {
         System.out.println("Welcome to employee wage computation problem.");
         utilityEmpWage empWage = new utilityEmpWage();
-        empWage.present();
+//        empWage.present();
         empWage.dailyWage();
 
     }
