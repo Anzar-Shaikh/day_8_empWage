@@ -34,5 +34,12 @@ public class LineComp {
         if (length1 == length2) {
             System.out.println("length of line1 is equal to length of line2");
         }
+        else if ( length1 > length2) {
+            System.out.println("length of line1 is greater then  length of line2");
+        }
+        else if ( length1 < length2) {
+            System.out.println("length of line1 is less then  length of line2");
+        }
+
     }
 }
