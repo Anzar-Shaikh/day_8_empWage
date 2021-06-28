@@ -24,10 +24,14 @@ class utilityEmpWage{
             switch (check) {
                 case isPresent -> {
                     System.out.println("Employee is present.");
+                    dailyWage = wagePerHr*fullDayHr;
+                    System.out.println("wage of the day is : " + dailyWage);
                     hrs = fullDayHr;
                 }
                 case isPartTime -> {
                     System.out.println("Employee is present part time.");
+                    dailyWage = wagePerHr*partTimeHr;
+                    System.out.println("wage of the day is : " + dailyWage);
                     hrs = partTimeHr;
                 }
                 case isAbsent -> hrs = 0;
@@ -45,6 +49,6 @@ public class EmpWage {
         System.out.println("Welcome to employee wage computation problem.");
         utilityEmpWage empWage = new utilityEmpWage();
         empWage.present();
-
+        System.out.println("Wage of month is calculated by calling above object.");
     }
 }
